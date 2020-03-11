@@ -28,8 +28,23 @@ body {
   overflow: hidden;
 }
 
+@keyframes sTransition {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+
+h1 {
+  font-family: Alata, sans-serif;
+}
+
 a {
   text-decoration: none;
+  font-family: Alata, sans-serif;
 }
 
 .container {
@@ -50,6 +65,7 @@ a {
   left: 0;
   right: 0;
   opacity: 1;
+
 }
 
 .letters:hover span {
@@ -72,6 +88,7 @@ opacity: 0;
 
 span {
   margin: 0;
+  font-family: Alata, sans-serif;
 }
 
 .btn-1 {
@@ -82,8 +99,10 @@ span {
     z-index: 20;
   }
 
-
-
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
 
 @media only screen and (min-width: 25em) {
 
