@@ -80,6 +80,7 @@ span {
 .btn-1 {
   overflow: hidden;
   position: relative;
+}
 
   span {
     z-index: 20;
