@@ -30,10 +30,6 @@ a {
   text-decoration: none;
 }
 
-.box {
-
-}
-
 .container {
   text-align: center;
   position: relative;
@@ -48,10 +44,14 @@ a {
 }
 
 .letters:hover a {
-  color: #000;
+  color: orange;
   left: 0;
   right: 0;
   opacity: 1;
+}
+
+.letters:hover span {
+opacity: 0;
 }
 
 .fun {
@@ -68,20 +68,11 @@ a {
   opacity: 0;
 }
 
-p {
-  color: #000;
-}
-
-p:hover {
-  color: fff;
-}
-
 span {
   margin: 0;
 }
 
 .btn-1 {
-  border: 1px solid;
   overflow: hidden;
   position: relative;
 
@@ -89,149 +80,8 @@ span {
     z-index: 20;
   }
 
-  &:after {
-    background: #fff;
-    content: "";
-    height: 155px;
-    left: -75px;
-    opacity: .2;
-    position: absolute;
-    top: -50px;
-    transform: rotate(35deg);
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 50px;
-    z-index: -10;
-  }
-}
-
-.btn-1:hover {
-
-  &:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-
-HTML CSSResult
-.monifireworks{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  background:black;
-  transform: scale(2);
-}
-.circle{
-  border-radius:50%;
-  border-color:transparent;
-  border-style: solid;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  animation-name: circleAnimation;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-.monifireworks span{
-  display: block;
-  width: 4px;
-  height:200px;
-  background: transparent;
-  border-radius: 2px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  overflow:hidden;
 
 
-}
-
-.monifireworks span:before, .monifireworks span:after{
-  content:"";
-  width:4px;
-  height:0%;
-  background:white;
-  display:block;
-  position:absolute;
-  border-radius:2px;
-
-}
-
-.monifireworks span:after{
-  bottom:0;
-  animation-name: spanAnimationAfter;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-.monifireworks span:before{
-  top:0;
-    animation-name: spanAnimationBefore;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-
-}
-
-
-
-.monifireworks span:nth-child(1){
-  transform: translate(-50%,-50%) rotate(45deg);
-}
-
-.monifireworks span:nth-child(2){
-  transform: translate(-50%,-50%) rotate(90deg);
-}
-
-.monifireworks span:nth-child(3){
-  transform: translate(-50%,-50%) rotate(135deg);
-}
-
-.monifireworks span:nth-child(4){
-  transform: translate(-50%,-50%) rotate(180deg);
-}
-
-.monifireworks span:nth-child(5){
-  transform: translate(-50%,-50%) rotate(225deg);
-}
-
-.monifireworks span:nth-child(6){
-  transform: translate(-50%,-50%) rotate(270deg);
-}
-
-.monifireworks span:nth-child(7){
-  transform: translate(-50%,-50%) rotate(315deg);
-}
-
-.monifireworks span:nth-child(8){
-  transform: translate(-50%,-50%) rotate(0deg);
-}
-
-@keyframes circleAnimation {
-  0% {width:0;height:0;border-width:0;border-color:white;}
-  30%{width:0;height:0;border-width:20px}
-  100% {width:100px;height:100px;border-width:0px;border-color:white; }
-}
-
-@keyframes spanAnimationBefore {
-  0% {height:0;top:40%}
-  30%{height:10%;}
-  100% {height:0;}
-}
-
-@keyframes spanAnimationAfter {
-  0% {height:0;bottom:40%}
-  30%{height:10%;}
-  100% {height:0;}
-}
-
-
-
-Resources1×0.5×0.25×Rerun
 
 @media only screen and (min-width: 25em) {
 
