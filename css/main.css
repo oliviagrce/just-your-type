@@ -80,10 +80,6 @@ span {
   position: relative;
 }
 
-  span {
-    z-index: 20;
-  }
-
   body {
     margin: 0;
     overflow: hidden;
