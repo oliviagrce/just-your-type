@@ -11,7 +11,9 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family: Alata; sans-serif;
+  font-family: Alata, sans-serif;
+  font-family: Montserrat, sans-serif;
+
   line-height: 1.3
 }
 
